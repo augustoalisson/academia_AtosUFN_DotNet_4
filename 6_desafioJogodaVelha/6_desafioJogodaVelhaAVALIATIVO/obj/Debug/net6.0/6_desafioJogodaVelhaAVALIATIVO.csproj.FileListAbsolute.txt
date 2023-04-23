@@ -1,0 +1,15 @@
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\bin\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.exe
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\bin\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.deps.json
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\bin\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.runtimeconfig.json
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\bin\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.dll
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\bin\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.pdb
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.csproj.AssemblyReference.cache
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.AssemblyInfoInputs.cache
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.AssemblyInfo.cs
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.csproj.CoreCompileInputs.cache
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.dll
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\refint\6_desafioJogodaVelhaAVALIATIVO.dll
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.pdb
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\6_desafioJogodaVelhaAVALIATIVO.genruntimeconfig.cache
+D:\Downloads\Meus Arquivos\academia_AtosUFN_DotNet_4\exercicios-e-desafios\6_desafioJogodaVelha\6_desafioJogodaVelhaAVALIATIVO\obj\Debug\net6.0\ref\6_desafioJogodaVelhaAVALIATIVO.dll
