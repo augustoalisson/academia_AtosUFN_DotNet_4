@@ -1,4 +1,4 @@
-﻿namespace _6_desafioJogodaVelhaAVALIATIVO
+namespace _6_desafioJogodaVelhaAVALIATIVO
 {
     /*
     Desenvolva um jogo da velha utilizando matrizes em C#. Faça com que cada jogador insira a sua jogada em uma interface amigavel. 
@@ -33,7 +33,8 @@
                     PlayerVsPlayer();
                     break;
                 case 2:
-                    //PlayerVsComputer();
+                    Console.Clear();
+                    PlayerVsCPUEasyMode();
                     break;
                 default:
                     Console.Clear();
@@ -155,6 +156,120 @@
                             Console.Clear();
                             WriteBoard(board);
                             Console.WriteLine("O player " + (playing == 'X' ? nameX : nameO) + " Venceu!");
+                            endGame = true;
+                        }
+                    }
+
+                    if (endTurn == true)
+                    {
+                        if (playing == 'X')
+                        {
+                            playing = 'O';
+                        }
+                        else
+                        {
+                            playing = 'X';
+                        }
+
+                        turns++;
+                    }
+
+                } while (endTurn == false);
+
+            } while (endGame != true);
+
+            Console.WriteLine("Deseja jogar novamente? (S/N)");
+            char newGame = char.Parse(Console.ReadLine().ToUpper());
+
+            if (newGame == 'S')
+            {
+                Console.Clear();
+                StartGame();
+            }
+            else
+            {
+                Console.WriteLine("Jogo Encerrado!");
+            }
+        }
+
+        public static void PlayerVsCPUEasyMode()
+        {
+            char playing = 'X';
+            bool endTurn;
+            bool endGame = false;
+            String nameX;
+            int l, c;
+            char[,] board = { { ' ', ' ', ' ' }, { ' ', ' ', ' ' }, { ' ', ' ', ' ' } };
+            Random rnd = new Random();
+
+            Console.WriteLine("CPU jogará como O.");
+            Console.WriteLine("Digite o nome do jogador X:");
+            nameX = Console.ReadLine();
+            if (nameX == null || nameX == "")
+            {
+                nameX = "X";
+            }
+
+            Console.Clear();
+
+            int turns = 0;
+
+            do
+            {
+                do
+                {
+                    endTurn = false;
+
+                    if (playing == 'X')
+                    {
+                        Console.WriteLine("\n" + nameX + " digite linha que deseja jogar: ");
+                        l = int.Parse(Console.ReadLine());
+                        Console.WriteLine("\n" + nameX + " digite coluna que deseja jogar: ");
+                        c = int.Parse(Console.ReadLine());
+                    }
+                    else
+                    {
+                        l = rnd.Next(3);
+                        c = rnd.Next(3);
+                    }
+
+                    Console.Clear();
+
+                    if (board[l, c] == ' ')
+                    {
+                        board[l, c] = playing;
+
+                        endTurn = true;
+                    }
+                    else
+                    {
+                        Console.Clear();
+                        Console.WriteLine("Local preenchida, escolha outro!");
+                    }
+
+                    WriteBoard(board);
+
+                    if (VerifyWinner(board, playing, turns) == true)
+                    {
+                        if (turns == 8)
+                        {
+                            Console.Clear();
+                            WriteBoard(board);
+                            Console.WriteLine("Empatou!");
+                            endGame = true;
+                        }
+                        else
+                        {
+                            Console.Clear();
+                            WriteBoard(board);
+                            if (playing == 'X')
+                            {
+                                Console.WriteLine("O player " + nameX + " Venceu!");
+                            }
+                            else
+                            {
+                                Console.WriteLine("O CPU Venceu!");
+                            }
                             endGame = true;
                         }
                     }
