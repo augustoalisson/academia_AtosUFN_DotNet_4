@@ -1,0 +1,140 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0px;
+    /* font-size: 18px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #F7F6F2;
+    height: 100%;
+}
+
+#top-header {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    background-color: #13437e;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.menu li {
+    display: inline-block;
+    height: 100%;
+}
+
+.menu li a {
+    display: block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.menu li a:hover {
+    background-color: #103768;
+}
+
+.w-10 {
+    width: 10%;
+}
+
+.w-80 {
+    width: 80%;
+    background-color: #FFF;
+}
+
+.w-100 {
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+}
+
+.title-1 {
+    text-align: center;
+}
+
+.content-1 {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 20px;
+}
+
+#logos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #F7F6F2;
+}
+
+.form {
+    margin-left: 30px;
+}
+
+.form>label {
+    margin-bottom: 10px;
+}
+
+/* Exemplo de galeria w3schools */
+/* https://www.w3schools.com/css/css_image_gallery.asp */
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    justify-content: space-between;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+/**/
+
+.galerry-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.galerry-2 {
+    display: flex;
+    justify-content: space-between;
+}
