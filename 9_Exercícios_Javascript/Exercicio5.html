@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+    <!-- 5 – Crie um formulário de seleção de itens com checkbox. O formulário deve possuir um botão desabilitado. O botão só se torna clicável quando tiver pelo menos 2 checkboxs marcado. -->
+    <style>
+        html,
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .select {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function checkSelecteds() {
+            var allCheckboxes = document.getElementsByTagName("input");
+            var selected = 0;
+
+            for (var xd of allCheckboxes) {
+                if (xd.checked) {
+                    selected++;
+                }
+            }
+
+            if (selected == 2 && document.getElementById("select-5").checked) {
+                document.getElementById("select-5").checked = false;
+                document.getElementById("select-5").setAttribute("disabled", true);
+            } else if (selected >= 2) {
+                document.getElementById("select-5").removeAttribute("disabled");
+            } else {
+                document.getElementById("select-5").setAttribute("disabled", true);
+            }
+        }
+
+        function teste() { console.log("aa") }
+    </script>
+</head>
+
+<body id="page">
+    <h1>Selecione pelo menos duas opções para habilitar o último checkbox!</h1>
+    <div class="select">
+        <div>
+            <input type="checkbox" id="select-1" name="checkboxs" onclick="checkSelecteds()">
+            <label for="select-1">Checkbox 1</label>
+            <input type="checkbox" id="select-2" name="checkboxs" onclick="checkSelecteds()">
+            <label for="select-2">Checkbox 2</label>
+            <input type="checkbox" id="select-3" name="checkboxs" onclick="checkSelecteds()">
+            <label for="select-3">Checkbox 3</label>
+            <input type="checkbox" id="select-4" name="checkboxs" onclick="checkSelecteds()">
+            <label for="select-4">Checkbox 4</label>
+            <input type="checkbox" id="select-5" name="checkboxs" onclick="checkSelecteds()" disabled="true">
+            <label for="select-5">Checkbox 5</label>
+        </div>
+    </div>
+</body>
+
+</html>

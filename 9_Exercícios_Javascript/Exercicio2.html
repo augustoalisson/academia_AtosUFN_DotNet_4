@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2</title>
+    <!-- 2 - Crie uma página com 4 links (tag <a>), cada um representando o nome de uma cor, que, utilizando o evento onmouseover altere a cor do plano de fundo para cor correspondente. -->
+    <style>
+        html,
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .links {
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+    <script>
+        function redColor() {
+            document.getElementById("page").style.backgroundColor = 'red';
+        }
+
+        function greenColor() {
+            document.getElementById("page").style.backgroundColor = 'green';
+        }
+
+        function blueColor() {
+            document.getElementById("page").style.backgroundColor = 'blue';
+        }
+
+        function yellowColor() {
+            document.getElementById("page").style.backgroundColor = 'yellow';
+        }
+    </script>
+</head>
+
+<body id="page">
+    <h1>Passe o mouse sobre a cor que desejar para o fundo!</h1>
+    <div class="links">
+        <a onmouseover="redColor()">Vermelho</a>
+        <a onmouseover="greenColor()">Verde</a>
+        <a onmouseover="blueColor()">Azul</a>
+        <a onmouseover="yellowColor()">Amarelo</a>
+    </div>
+</body>
+
+</html>

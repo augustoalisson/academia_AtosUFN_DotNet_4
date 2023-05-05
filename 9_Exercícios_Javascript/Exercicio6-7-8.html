@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 6, 7 e 8</title>
+    <!-- 6 – Crie um parágrafo com um texto como conteúdo. Crie 4 botões. Dois para trocar a cor da fonte, de branco para preto e vice-versa e outros dois para fazer o mesmo com o fundo do parágrafo. Use divs se julgar necessário.
+    7 – Crie um botão + (mais) e outro – (menos) na mesma página do exercício anterior. Esses botões aumentam e diminuem o tamanho da fonte, respectivamente.
+    8 – Ainda continuando no exercício 6, faça um botão que transforme todo o texto do parágrafo em maiúscula, e outro em minúscula. -->
+    <style>
+        html,
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0px;
+            background-color: gray;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function textWhite() {
+            document.getElementById("text").style.color = 'white';
+        }
+
+        function textBlack() {
+            document.getElementById("text").style.color = 'black';
+        }
+
+        function backgroundWhite() {
+            document.getElementById("text").style.backgroundColor = 'white';
+        }
+
+        function backgroundBlack() {
+            document.getElementById("text").style.backgroundColor = 'black';
+        }
+
+        function increaseFontSize() {
+            var currentSize = parseInt(document.getElementById('text').style.fontSize.slice(0, 2));
+            currentSize++;
+            document.getElementById("text").style.fontSize = currentSize + 'px';
+        }
+
+        function decreaseFontSize() {
+            var currentSize = parseInt(document.getElementById('text').style.fontSize.slice(0, 2));
+            currentSize--;
+            document.getElementById("text").style.fontSize = currentSize + 'px';
+        }
+
+        function changeToUpper() {
+            document.getElementById("text").innerHTML = document.getElementById("text").textContent.toUpperCase();
+        }
+
+        function changeToLower() {
+            document.getElementById("text").innerHTML = document.getElementById("text").textContent.toLowerCase();
+        }
+
+        function resetCase() {
+            document.getElementById("text").innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam earum doloremque in fuga. Minima est quaerat totam debitis incidunt, consequuntur, nostrum deleniti nesciunt voluptatem laboriosam doloremque rem voluptatum quae!";
+        }
+    </script>
+</head>
+
+<body id="page">
+    <h1>Botões para mudar a cor da fonte do texto:</h1>
+    <div class="buttons">
+        <button onclick="textWhite()">Branco</button>
+        <button onclick="textBlack()">Preto</button>
+    </div>
+    <h1>Botões para mudar a cor do fundo do texto:</h1>
+    <div class="buttons">
+        <button onclick="backgroundWhite()">Branco</button>
+        <button onclick="backgroundBlack()">Preto</button>
+    </div>
+    <h1>Botões para aumentar e diminuir o tamanho da fonte do texto:</h1>
+    <div class="buttons">
+        <button onclick="increaseFontSize()">Aumentar</button>
+        <button onclick="decreaseFontSize()">Diminuir</button>
+    </div>
+    <h1>Botões para deixar todo o texto maiúsculo e minúsculo texto:</h1>
+    <div class="buttons">
+        <button onclick="changeToUpper()">Maiúsculo</button>
+        <button onclick="changeToLower()">Minúsculo</button>
+        <button onclick="resetCase()">Reset</button>
+    </div>
+    <p id="text" style="font-size: 15px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident totam earum
+        doloremque in fuga.
+        Minima est
+        quaerat totam debitis incidunt, consequuntur, nostrum deleniti nesciunt voluptatem laboriosam doloremque rem
+        voluptatum quae!</p>
+</body>
+
+</html>

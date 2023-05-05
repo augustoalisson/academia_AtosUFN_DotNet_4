@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 3</title>
+    <!-- 3 - Crie uma página com uma lista (select - RadioButton) com 4 opções de cores. Ao selecionar uma opção de cor, altere o plano de fundo da página para a cor específica. -->
+    <style>
+        html,
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .links {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function redColor() {
+            document.getElementById("page").style.backgroundColor = 'red';
+        }
+
+        function greenColor() {
+            document.getElementById("page").style.backgroundColor = 'green';
+        }
+
+        function blueColor() {
+            document.getElementById("page").style.backgroundColor = 'blue';
+        }
+
+        function yellowColor() {
+            document.getElementById("page").style.backgroundColor = 'yellow';
+        }
+    </script>
+</head>
+
+<body id="page">
+    <h1>Selecione a cor que desejar para o fundo!</h1>
+    <div class="links">
+        <div>
+            <input type="radio" id="vermelho" name="cores" onclick="redColor()">
+            <label for="vermelho">Vermelho</label>
+            <input type="radio" id="verde" name="cores" onclick="greenColor()">
+            <label for="verde">Verde</label>
+            <input type="radio" id="azul" name="cores" onclick="blueColor()">
+            <label for="azul">Azul</label>
+            <input type="radio" id="amarelo" name="cores" onclick="yellowColor()">
+            <label for="amarelo">Amarelo</label>
+        </div>
+    </div>
+</body>
+
+</html>

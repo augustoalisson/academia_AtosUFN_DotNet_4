@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+    <!-- 4 – Crie um parágrafo (<p>) com um texto como conteúdo. Adicione um botão que, ao ser clicado, oculte ou mostre o texto do parágrafo. -->
+    <style>
+        html,
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0px;
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+    <script>
+        function hide() {
+            document.getElementById("content").style.display = 'none';
+        }
+
+        function show() {
+            document.getElementById("content").removeAttribute("style");
+        }
+    </script>
+</head>
+
+<body id="page">
+    <h1>Pressione o botão para mostrar ou ocultar o texto!</h1>
+    <div class="buttons">
+        <button onclick="hide()">Ocultar conteúdo</button>
+        <button onclick="show()">Mostrar conteúdo</button>
+    </div>
+    <p id="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi optio obcaecati assumenda deserunt
+        officia hic
+        magni corrupti voluptatum dolor nam amet, tempore, quia suscipit libero maxime a consectetur recusandae
+        incidunt.</p>
+</body>
+
+</html>
