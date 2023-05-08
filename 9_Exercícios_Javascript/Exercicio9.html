@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 9</title>
+    <!-- 9 - Crie um formulário com os campos para cadastrar o usuário de um sistema (login, senha e confirmar senha). Permita que a página seja submetida apenas se todos os campos estiverem preenchidos, se os campos senha e confirma senha forem iguais e a senha possuir entre 6 e 10 caracteres.  -->
+    <style>
+        html,
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: 0px;
+            /* background-color: gray; */
+        }
+
+        h1,
+        p {
+            text-align: center;
+        }
+    </style>
+    <script>
+        function checkForm() {
+            let login = document.getElementById("login").value;
+            let senha = document.getElementById("senha").value;
+            let senhaConfirm = document.getElementById("senhaConfirm").value;
+
+            if (senha.length > 6 && senha.length < 11 && senhaConfirm.length > 6 && senhaConfirm.length < 11) {
+                if (senha == senhaConfirm) {
+                    alert("Cadastrado com Sucesso!");
+                    document.getElementById('btn1').click();
+                } else {
+                    alert("A senha e Confirmação da senha são diferentes!");
+                }
+            } else {
+                alert("Sua senha deve conter entre 6 e 10 caracteres!");
+            }
+        }
+    </script>
+</head>
+
+<body id="page">
+    <h1>Preencha os campos para cadastro no sistema:</h1>
+
+    <form class="" action="" method="post">
+        <label for="login">Login: </label>
+        <input type="text" name="login" id="login" required><br>
+        <label for="senha">Senha: </label>
+        <input type="password" name="senha" id="senha" required><br>
+        <label for="senhaConfirm">Confirmar Senha: </label>
+        <input type="password" name="senhaConfirm" id="senhaConfirm" required><br>
+
+        <br>
+
+        <button type="reset">Limpar</button>
+        <button id="btn1" type="submit" style="visibility: hidden">Enviar</button>
+    </form>
+    <button onclick="checkForm()">Finalizar Cadastro</button>
+</body>
+
+</html>
